@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Merriment Industries</title>
+<meta name="description" content="Merriment Industries sources, processes and exports grains, pulses, spices, oilseeds, fresh produce, tea and coffee from India to buyers in 42 countries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="util">
+  <div class="wrap">
+    <span class="util-item"><span class="live-dot" aria-hidden="true"></span><span id="deskStatus">Trade desk</span></span>
+    <span class="util-item util-hide">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 6l9 7 9-7M3 6h18v12H3z"/></svg>
+      <span>trade@merriment-industries.com</span>
+    </span>
+    <span class="util-item util-hide">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>
+      <span>+91 22 4000 7100</span>
+    </span>
+    <div class="util-right">
+      <a href="#contact-catalogue">Request catalogue</a>
+      <a href="#careers" class="util-hide">Careers</a>
+    </div>
+  </div>
+</div>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Merriment Industries, home">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" rx="6" fill="var(--primary)"/>
+        <path d="M20 32V13" stroke="var(--on-primary)" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <path d="M20 18c-4.2 0-7.2-3-7.2-8 4.2 0 7.2 3 7.2 8z" fill="var(--accent)"/>
+        <path d="M20 23c4.2 0 7.2-3 7.2-8-4.2 0-7.2 3-7.2 8z" fill="var(--on-primary)"/>
+        <path d="M11 32h18" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-name">Merriment<small>Industries</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#products" data-route="products">Products</a>
+      <a href="#quality" data-route="quality">Quality</a>
+      <a href="#logistics" data-route="logistics">Logistics &amp; Terms</a>
+      <a href="#sustainability" data-route="sustainability">Sustainability</a>
+      <a href="#about" data-route="about">Company</a>
+      <a href="#insights" data-route="insights">Insights</a>
+      <a href="#contact" data-route="contact">Contact</a>
+    </nav>
+    <div class="hdr-actions">
+      <a class="basket" href="#contact" aria-label="Enquiry list">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4h6l1 2h3v15H5V6h3z"/><path d="M9 11h6M9 15h4"/></svg>
+        <span class="basket-count" id="basketCount" hidden>0</span>
+      </a>
+      <a class="btn btn-primary" href="#contact">Request a quote</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mnav" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mnav" id="mnav" aria-label="Mobile" hidden>
+  <a href="#products" data-route="products">Products <span aria-hidden="true">→</span></a>
+  <a href="#quality" data-route="quality">Quality &amp; certifications <span aria-hidden="true">→</span></a>
+  <a href="#logistics" data-route="logistics">Logistics &amp; trade terms <span aria-hidden="true">→</span></a>
+  <a href="#sustainability" data-route="sustainability">Sustainability <span aria-hidden="true">→</span></a>
+  <a href="#about" data-route="about">Company <span aria-hidden="true">→</span></a>
+  <a href="#insights" data-route="insights">Market insights <span aria-hidden="true">→</span></a>
+  <a href="#careers" data-route="careers">Careers <span aria-hidden="true">→</span></a>
+  <a href="#contact" data-route="contact">Contact <span aria-hidden="true">→</span></a>
+  <a class="btn btn-primary" href="#contact">Request a quote</a>
+</nav>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div>
+        <span class="brand-name">Merriment<small>Industries</small></span>
+        <p class="ftr-about">Agricultural import and export since 2008. Sourced from audited farms, processed in our own facilities and shipped to specification.</p>
+        <form class="news" id="newsForm" novalidate>
+          <label class="sr-only" for="newsEmail">Work email for market briefings</label>
+          <input id="newsEmail" type="email" placeholder="Work email for market briefings" autocomplete="email">
+          <button class="btn btn-light" type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#products-grains">Grains &amp; cereals</a></li>
+          <li><a href="#products-pulses">Pulses &amp; lentils</a></li>
+          <li><a href="#products-spices">Spices &amp; seeds</a></li>
+          <li><a href="#products-oilseeds">Oilseeds &amp; nuts</a></li>
+          <li><a href="#products-fresh">Fresh produce</a></li>
+          <li><a href="#products-beverage">Tea &amp; coffee</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Trade</h4>
+        <ul>
+          <li><a href="#quality">Quality &amp; certifications</a></li>
+          <li><a href="#logistics">Incoterms &amp; shipping</a></li>
+          <li><a href="#logistics-documents">Export documents</a></li>
+          <li><a href="#products-calendar">Crop calendar</a></li>
+          <li><a href="#contact">Request a quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#sustainability">Sustainability</a></li>
+          <li><a href="#insights">Market insights</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#about-offices">Offices</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Trade desk</h4>
+        <ul>
+          <li>trade@merriment-industries.com</li>
+          <li>+91 22 4000 7100</li>
+          <li>Mon–Sat, 09:00–19:00 IST</li>
+          <li><a href="#contact">All contacts</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-reg">
+      <span>IEC 03XXXXXXXX</span><span>APEDA RCMC 1234/2011</span><span>FSSAI 1001XXXXXXXXXX</span><span>GSTIN 27XXXXXXXXXX1Z5</span>
+    </div>
+    <div class="ftr-base">
+      <span>© 2026 Merriment Industries Pvt. Ltd. All rights reserved.</span>
+      <span><a href="#legal">Privacy</a> · <a href="#legal">Terms of trade</a> · <a href="#legal">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
