@@ -32,7 +32,7 @@ Each page is a hash route inside `index.html`:
 ## Files
 
 - `index.html`: page shell (utility bar, header, mobile menu, footer)
-- `assets/css/styles.css`: design tokens (light and dark) and all styles
+- `assets/css/styles.css`: design tokens and all styles (light theme only)
 - `assets/js/data.js`: **all site content** (products, certifications, offices, insights, FAQ). Edit this file to update the catalogue.
 - `assets/js/app.js`: views, routing, catalogue filters, enquiry list and form handling
 
