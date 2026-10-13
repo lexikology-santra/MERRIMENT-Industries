@@ -7,7 +7,7 @@
   --fg:#0B2B21; --fg-muted:#4F6B61; --bg:#F2FBF7; --surface:#FFFFFF; --surface-2:#F7FCF9; --line:#D2EBDF; --line-strong:#B4D6C5;
   --on-primary:#FFFFFF;
   --deep:#0B2B21; --deep-2:#0F3A2C; --on-deep:#E8F6EE; --on-deep-muted:#9FC2B2; --deep-line:rgba(184,235,208,.16);
-  --ok:#0F7A55; --ok-bg:#DDF5E8; --new:#1F5FA8; --new-bg:#E3EEFA; --warn:#8A5A00; --warn-bg:#FBEFD5; --danger:#B3261E;
+  --danger:#B3261E;
   --font-head:"Source Serif 4", "Iowan Old Style", Georgia, serif;
   --font-body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
   --font-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
@@ -67,7 +67,7 @@ button{cursor:pointer}
 
 /* ---------- Buttons ---------- */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:var(--r-md);font-weight:600;font-size:15px;text-decoration:none;border:1px solid transparent;white-space:nowrap;transition:background-color .15s,border-color .15s,color .15s}
-.btn svg{width:16px;height:16px}
+.btn svg{width:16px;height:16px;max-width:none;flex-shrink:0}
 .btn-primary{background:var(--primary);color:var(--on-primary)}
 .btn-primary:hover{background:var(--primary-strong)}
 .btn-line{background:transparent;border-color:var(--line-strong);color:var(--fg)}
@@ -235,10 +235,14 @@ button{cursor:pointer}
 .post h3{font-size:20px;line-height:1.25}
 .post p{color:var(--fg-muted);font-size:14.5px}
 .chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--support);color:var(--primary);font-family:var(--font-body);white-space:nowrap}
-.chip-ok{background:var(--ok-bg);color:var(--ok)}
-.chip-new{background:var(--new-bg);color:var(--new)}
-.chip-warn{background:var(--warn-bg);color:var(--warn)}
-.chip-muted{background:var(--surface-2);color:var(--fg-muted);border:1px solid var(--line)}
+/* Status badges use palette #4 greens only, from strongest (filled) to weakest (hollow) */
+.chip-new{background:var(--primary);color:var(--on-primary)}
+.chip-new::before{background:var(--accent)}
+.chip-ok{background:var(--support);color:var(--primary)}
+.chip-warn{background:var(--surface);color:var(--fg);box-shadow:inset 0 0 0 1px var(--secondary)}
+.chip-warn::before{background:var(--secondary)}
+.chip-muted{background:var(--surface);color:var(--fg-muted);box-shadow:inset 0 0 0 1px var(--line-strong)}
+.chip-muted::before{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
 .chip::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
 .chip.plain::before{display:none}
 
